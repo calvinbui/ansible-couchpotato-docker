@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: calvinbui
-  description: Couchpotato in Docker
+  description: CouchPotato in Docker
   company: https://calvin.me
   license: GPLv3
   min_ansible_version: 2.8

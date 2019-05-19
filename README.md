@@ -1,6 +1,6 @@
-# Ansible Couchpotato
+# Ansible CouchPotato
 
-Couchpotato in Docker
+CouchPotato in Docker
 
 ##  Requirements
 
