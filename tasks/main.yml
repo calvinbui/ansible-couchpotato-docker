@@ -6,8 +6,6 @@
     state: directory
   loop:
     - "{{ couchpotato_config_directory }}"
-    - "{{ couchpotato_download_directory }}"
-    - "{{ couchpotato_movie_directory }}"
 
 - name: Set Docker container parameters
   set_fact:
