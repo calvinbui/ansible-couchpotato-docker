@@ -4,13 +4,12 @@ couchpotato_name: couchpotato
 couchpotato_image: linuxserver/couchpotato
 couchpotato_ports:
   - 5050:5050
-  - 5151:5151
 couchpotato_config_directory: /tmp/couchpotato
 couchpotato_movie_directory: /tmp/movies
 couchpotato_download_directory: /tmp/downloads
 couchpotato_environment_variables:
   PUID: "1000"
-  PGUID: "1000"
+  PGID: "1000"
   TZ: Sydney/Australia
 
 couchpotato_docker_additional_options:
