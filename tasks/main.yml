@@ -35,5 +35,5 @@
     section: "{{ item.key.split('.')[0] }}"
     option: "{{ item.key.split('.')[1] }}"
     value: "{{ item.value }}"
-  with_items: "{{ couchpotato_config | dict2items }}"
+  loop: "{{ lookup('dict', couchpotato_config) }}"
   notify: Restart CouchPotato
