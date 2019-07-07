@@ -7,5 +7,8 @@
   vars:
     pip_install_packages:
       - name: docker
+        executable: pip3
+      - name: pyyaml
+        executable: pip3
   roles:
     - calvinbui.ansible_pip
