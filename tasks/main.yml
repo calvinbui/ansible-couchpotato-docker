@@ -24,10 +24,9 @@
   docker_container: "{{ couchpotato_container_parameters | combine(couchpotato_docker_additional_options) }}"
   register: couchpotato_container
 
-- name: Wait for CouchPotato start
+- name: Wait for CouchPotato config file
   wait_for:
-    port: "{{ couchpotato_ports[0].split(':')[0] }}"
-    host: "{{ couchpotato_container.container.NetworkSettings.IPAddress }}"
+    path: "{{ couchpotato_config_directory }}/config.ini"
 
 - name: Configure CouchPotato
   ini_file:
